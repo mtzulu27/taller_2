@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jura|Montserrat|Righteous|Roboto+Condensed|Audiowide|Days+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/logo_wh.ico">
+    <title> ZEBRA - Store</title>
+</head>
+
+<body>
+   <div class="nav">
+    <a href="/home" class="navlogo">HOME</a>
+    <a href="/checkout"><img src="/img/carrito.png"><span class="carrito">0</span></a>
+    <a href="#seacrh"><i class="material-icons">search</i></a>
+    <input type="text" placeholder="" name="search" />
+    <a href="/store">STORE</a>
+    <a href="#artists">THE CREW</a>
+    <a href="#museum">MUSEUM</a>
+  </div>
+
+  <div class="prod_container">
+      
+      <div class="filter">
+          <div class="filtro">
+
+              <h2>Marca</h2>
+              <ul>
+                  <li><a href="/store?marca=Quantum Tattoo Ink">Quantum Tattoo Ink</a></li>
+                  <li><a href="/store?marca=World Famous Ink">World Famous Ink</a></li>
+                  <li><a href="/store?marca=Premium Quality">Premium Quality</a></li>
+                  <li><a href="/store?marca=Intenze">Intenze</a></li>
+                   <li><a href="/store?marca=Solid Ink">Solid Ink</a></li>
+                   <li><a href="/store?marca=Legendary">Legendary</a></li>
+                    <li><a href="/store?marca=The Greys">The Greys</a></li>
+              </ul>
+
+              <h2>Color</h2>
+              <ul>
+                  <li><a href="/store?color=Black">Black</a></li>
+                  <li><a href="/store?color=Orange">Orange</a></li>
+                  <li><a href="/store?color=Yellow">Blue</a></li>
+                  <li><a href="/store?color=Green">Green</a></li>
+                  <li><a href="/store?color=White">White</a></li>
+                  <li><a href="/store?color=Rainbow">Rainbow</a></li>
+                  <li><a href="/store?color=Yellow">Yellow</a></li>
+              </ul>
+              <h2>Tamaño</h2>
+              <ul>
+                  <li><a href="/store?descripcion=1oz">1 oz</a></li>
+                  <li><a href="/store?descripcion=1/2 oz">1/2 oz</a></li>
+                  <li><a href="/store?descripcion=6 colors pack">6 colors</a></li>
+                  <li><a href="/store?descripcion=14 colors pack">14 colors</a></li>
+              </ul>
+              <h2>Precio</h2>
+              <ul>
+                  <li><a href="/store?precio=$6.50">$6.50</a></li>
+                  <li><a href="/store?precio=$7.50">$7.50</a></li>
+                  <li><a href="/store?precio=$9.50">$9.50</a></li>
+                  <li><a href="/store?precio=$11.50">$11.50</a></li>
+                  <li><a href="/store?precio=$15.00">$15.00</a></li>
+                  <li><a href="/store?precio=$54.99">$54.99</a></li>
+                  <li><a href="/store?precio=$80.00">$80.00</a></li>
+               
+              </ul>
+              
+          </div>
+      </div>
+
+      <div class="prod_list">
+        {{#each productos}}
+            <div class="prod" data-id="{{this._id}}">
+                <img src="{{img_principal}}" alt="">
+                    <h2>{{nombre}}</h2>
+                   <!-- <p>{{marca}}</p>-->
+                    <p>{{color}}</p>
+                   <!-- <p>{{descripcion}}</p>-->
+                </a>
+                <button class="agrega">Agregar al carrito</button>
+                
+            </div>
+        {{/each}}
+         
+    </div>
+
+  </div>
+
+<!-- <div>
+    <h2>STORE</h2>
+
+    <div>
+        {{#each productos}}
+            <div class="ink"
+                data-id="{{this._id}}">
+                    <div class="product" style="
+                                background-image: url({{img_principal}});"></div>
+                    <p>{{descripcion}}</p>
+                    <p><b>{{marca}}</b></p>
+                </a>
+                <button class="agregar">Agregar</button>
+            </div>
+        {{/each}}
+         
+    </div>
+
+    <h2>Filtrar por marca:</h2>
+    <a href="/?marca=Honda">Honda</a>
+    <a href="/?marca=Yamaha">Yamaha</a>
+    <a href="/">Todas</a>
+
+    <h2>Filtrar por modelo:</h2>
+    <a href="/?menor=10000000&mayor=20000000">XRE300</a>
+    <a href="/?modelo=Teneré 660">Teneré 660</a>
+    <a href="/">Todas</a>
+
+    <br><br>
+    <input type="range" name="" id="slider" min="10" max="20">
+    <input type="range" name="" id="sliderMax" min="10" max="20">
+    <button class="minMax">Buscar</button>
+
+</div>-->
+
+    <script src="js/cliente.js"></script>
+    <script src="js/productos.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "motos": [
+        {
+            "marca": "Honda",
+            "modelo": "XRE300",
+            "img_principal": "http://motosnuevas.formulamoto.es/galeria/4526/Honda_NC750_X_2016.jpg"
+        },
+        {
+            "marca": "Yamaha",
+            "modelo": "MT07",
+            "img_principal": "https://www.bhh.com.sg/wp-content/uploads/2015/03/Yam-MT07.jpg"
+        },
+        {
+            "marca": "Yamaha",
+            "modelo": "Teneré 660",
+            "img_principal": "http://www.yamaha-motor.com.mx/images/motos/xtz660_gris1.jpg"
+        }
+    ]
+}

@@ -1,0 +1,750 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+::selection {
+    color: white;
+    background-color: #e82e53;
+}
+
+i:hover{
+    color: #e82e53;
+}
+.prev:hover{
+cursor: pointer;
+}
+.next:hover{
+    color: #e82e53;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.prod:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.prod{
+    transition: transform .5s;
+}
+
+.service:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.service{
+    transition: transform .5s;
+}
+
+.artist:hover{
+   
+    cursor: pointer;
+    transform: scale(1.2);
+
+    img{
+        border: 2px solid #e82e53;
+    }
+}
+
+.artist{
+    transition: transform .5s;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+input{
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h2,h3,a,p {
+    text-align: center;
+    color: white;
+    font-family: 'Jura', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+}
+.title{
+    h2{
+        padding: 30 0;
+    }
+    height: auto;
+    //background: #e82e53;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.comparison{
+    background-image: url("/img/ahoyb.jpg");
+}
+.nav {
+    width: 100%;
+    background-color:black;
+    opacity: 0.7;
+    position: fixed;
+    z-index: 1;
+
+    img{
+        width: 25px;
+        height: 20px;
+        margin-right: 20px;
+    }
+
+    input{
+        padding: 10px 30px;
+        float: right;
+        outline: none;
+        color: white;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+    a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+    }
+    .navlogo{
+       float: left;
+    }
+    a:hover {
+        color: #e82e53;
+    }
+    img:hover{
+        color: #e82e53;
+    }
+    
+}
+
+.banner_container {
+    width: 100%;
+    height: 100%;
+    background: url("/img/bann.jpg");
+    background-attachment: fixed;
+    background-color: lightcyan;
+    
+    .logo {
+        padding-top: 200px;
+        width:100%;
+        height: 100%;
+       // background-color: #b95d4e;
+        h1{
+            font-size: 160px;
+        }
+        h2{
+            margin-top: -16px;
+            font-size: 42px;
+        }
+        img{
+            margin: 0 auto;
+	        display: block;
+            width:80px;
+            height: 80px;
+        }
+    }
+    .contact_container {
+        width: 100%;
+        height: 47px;
+        background-color: black;
+        position: absolute; bottom: 0; left: 0;
+        display: flex;
+        p{
+            font-size: 20px;
+            display: inline-block;
+        }
+        i{
+            display: inline-block;
+            color:#e82e53;
+            margin-right: 20px;
+        }
+
+        .data{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            opacity: 0.6;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+
+.services_container {
+    width: 100%;
+    height: auto;
+   // background-color: #a09f9f;
+   background-image: url("/img/ahoyb.jpg");
+   background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services_list{
+        width: 100%;
+        height: auto;
+     //  background-color: #c7a580;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        
+
+        .service{
+            width: 320px;
+            height: 403px;
+            display: flex;
+            flex-direction: column;
+            background-color: #232222;
+            margin: 40px;
+
+            button{
+                width: 100%;
+                height: 50px;
+                border: none;
+                background-color: #e82e53;
+                color: white;
+                font-family: 'Jura', sans-serif;
+                font-size: 15px;
+            }
+            p{
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                padding: 20px;
+                font-size: 15px;
+            }
+            img{
+                padding: 20px;
+                width: 90px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+
+.service:hover{
+    background-color: #b95d4e;
+}
+.appointment_container {
+    width: 100%;
+    height: auto;
+   // background-color: blue;
+    display: flex;
+    flex-direction: column;
+
+    .title{
+       // background-color: #832d20;
+        h2{
+            float: left;
+           // padding-top: 100px;
+           // margin-left:-400px;
+        }
+    }
+
+    .appointment{
+        width: 100%;
+        height: 100%;
+        //background-color: orange;
+        overflow: hidden;
+        display: flex;
+
+        .background{
+            width: 50%;
+            height: 100%;
+            background-image: url("/img/tattoo_banner.jpg");
+            //background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+           // background-color: #232222;
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           // background-position-x: -55px;
+        }
+        .appointment_form{
+            padding-left: 40px;
+            width:100%;
+            height: 100%;
+            background-color: #232222;
+
+            form{
+                float: left;
+               // margin-top: 90px;
+               // margin-left: 240px;
+            }
+
+            input{
+                width: 500px;
+                height: 30px;
+                display: block;
+                outline: none;
+                color: white;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;        
+            }
+
+            label{
+                
+                margin:20 0;
+                display: block;
+                color: white;
+                font-family: 'Jura', sans-serif;
+                font-size: 20px;
+            }
+
+            select{
+                margin-right: 40px;
+                display: inline-block;
+                width: 131px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid #e82e53;
+                color: white;
+                font-family: 'Jura', sans-serif;
+                font-size: 15px;
+            }
+
+            option{
+                //margin-right: 40px;
+                display: inline-block;
+                width: 131px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid #e82e53;
+                color: white;
+                font-family: 'Jura', sans-serif;
+                font-size: 15px;
+            }
+
+            button{
+                margin: 90 0;
+                display: block;
+                width: 131px;
+                height: 50px;
+                border: none;
+                background-color: #e82e53;
+                color: white;
+                font-family: 'Jura', sans-serif;
+                font-size: 15px;
+            }
+        }
+    }
+   
+}
+
+.museum_container {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/ahoyb.jpg");
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+
+
+    .museum{
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+       // background-color: #b95d4e;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .prev{
+            margin-right: 50px;
+            width: 70px;
+            height: 70px;
+           // background-color: #e82e53;
+           // border: 2px solid #e82e53;
+            // border-radius: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .next{
+            margin-left: 50px;
+            width: 70px;
+            height: 70px;
+           // background-color: #e82e53;
+           // border: 2px solid #e82e53;
+            // border-radius: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .slide{
+            width: 1000px;
+            height: 600px;
+            overflow: hidden;
+            padding: 30px;
+            border: 3px solid #e82e53;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgslide{
+            overflow: hidden;
+            width: auto;
+            height: auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border: 1px;
+             border-radius: 30px;
+            }
+        }
+    }
+
+}
+
+.crew_container {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/tatuogru.jpg");
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: cover;
+    background-color: #b95d4e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .rectangle{
+    width: 25%;
+    height: 100px;
+    //background-color: #6934be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+    .crew{
+     width: 75%;
+     height:100%;
+     display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     //background-color: #33c22e;
+    }
+    .title{
+        width: 100%;
+       // background-color: #bd195d;
+    }
+
+    .artist{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 249px;
+        height: auto;
+
+        img:hover{
+            border: #e82e53;
+        }
+
+        h2{
+            margin: 20 0;
+        }
+          
+    }
+
+    
+}
+
+
+
+.pricelist_container {
+    width: 100%;
+    height: 100%;
+    background-color: #be9324;
+    display: flex;
+    
+    .list{
+    width: 70%;
+    height: auto;
+    background-color: #434242;
+    display: flex;
+    flex-direction: row;
+
+    ul{
+        color: white;
+        font-size: 15px;
+        font-family: 'Jura', sans-serif;
+      }
+
+      li{
+          margin: 30 300;
+      }
+      h3{
+          margin-top: 40px;
+          margin-bottom:40px;
+          margin-left: -60px;
+      }
+    }
+.title{
+
+     h2{
+         padding-top: 100px;
+     }
+ }
+
+.price_background{
+    width: 30%;
+    height: auto;
+    background-image: url("/img/bannner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #39291e;
+}
+
+}
+
+.store_container {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/ahoyb.jpg");
+    background-attachment: fixed;
+   //background-color: green;
+
+    .store{
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        margin-top: 100px;
+        //background-color: #b95d4e;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .prev{
+            margin-right: 50px;
+            width: 70px;
+            height: 70px;
+           // background-color: #e82e53;
+           // border: 2px solid #e82e53;
+            // border-radius: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .next{
+            margin-left: 50px;
+            width: 70px;
+            height: 70px;
+           // background-color: #e82e53;
+           // border: 2px solid #e82e53;
+            // border-radius: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .slide{
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            padding: 30px;
+            border: 3px solid #e82e53;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgslide{
+            overflow: hidden;
+            width: auto;
+            height: auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border: 1px;
+             border-radius: 30px;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 47px;
+    background-color: #39291e;
+}
+
+.prod_container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    
+    .filter{
+        width: 20%;
+        height: auto;
+        background-color: #232222;
+        padding-top:10px;
+        
+
+        .filtro{
+            width: 100%;
+            height: auto;
+            
+            //background-color: hotpink;
+            li{
+                margin-top: 15px;
+            }
+            a{
+                text-decoration: none;
+                margin: 20px;
+            }
+            a:hover{
+                color:#e82e53;
+            }
+            h2{
+                margin-top: 100px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .prod_list{
+        background-image: url("/img/ahoyb.jpg");
+        background-attachment: fixed;
+        width: 100%;
+        height: 4000px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: brown;
+
+        .prod{
+            width: 320px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            background-color: #232222;
+            margin: 30px;
+            
+
+            button{
+                width: 100%;
+                height: 50px;
+                border: none;
+                background-color: #e82e53;
+                color: white;
+                font-family: 'Jura', sans-serif;
+                font-size: 15px;
+            }
+            h2{
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                font-size: 15px;
+            }
+            img{
+                padding: 10px;
+                width: 200px;
+                margin: 0 auto;
+                display: block;
+            }
+            
+        }
+    }
+}
+.check_out{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    background-image: url("/img/ahoyb.jpg");
+    background-attachment: fixed;
+
+    ul{
+        color: white;
+    }
+}
+
+
